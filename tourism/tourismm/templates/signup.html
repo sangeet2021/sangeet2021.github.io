@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+<title>Login</title>
+{% endblock %} {% block content %}
+
+<div class="cra mt-3 container">
+  <h2>Create Account</h2>
+</div> 
+
+<form method="post" class="uniForm container sgnop">
+
+  
+
+  <div>
+    {% csrf_token %} {{ form.media }} {{ form|crispy }}
+    <div class="cra">
+      <button type="submit">Sign up</button>
+    </div>
+  </div>
+  
+  
+</form>
+
+
+{% endblock %}

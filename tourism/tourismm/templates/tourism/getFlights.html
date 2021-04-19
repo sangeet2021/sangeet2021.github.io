@@ -1,0 +1,36 @@
+
+
+{% extends 'layout.html' %} {% load crispy_forms_tags %}  {% load static %} {% block content%}
+
+<div class="cra mt-5 container">
+    <h2>Bookings</h2>
+</div> 
+
+<table class="table-striped container mt-5">
+    <tr>
+        <th>Name</th>
+        <th>Airlines</th>
+        <th>No of People</th>
+        <th>Booked Date</th>
+        <th>Email</th>
+        <th>Number</th>
+        <th>Update Booking</th>
+        <th>Delete Booking</th>
+    </tr>
+    {% for flight in flights %}
+    <tr>
+        <td> {{ flight.name }}</td>
+        <td> {{ flight.airlines }}</td>
+        <td> {{ flight.no_Of_People }}</td>
+        <td> {{ flight.check_In_Date }}</td>
+        <td> {{ flight.email }}</td>
+        <td> {{ flight.number }}</td>
+        <td> <a href="{% url 'flight_update' flight.pk  %}"><button class="btn btn-success">Update</button></a></td>
+        <td> <a href="{% url 'flight_delete' flight.pk  %}"><button class="btn btn-success">Delete</button></a></td>
+        
+    </tr>
+    {% endfor %}
+</table>
+  
+
+{% endblock %}

@@ -1,0 +1,26 @@
+
+
+{% extends 'layout.html' %} {% load crispy_forms_tags %}  {% load static %} {% block content%}
+
+<div class="cra mt-3 container">
+    <h2>Book Hotel</h2>
+</div> 
+
+    {% if user.is_authenticated %}
+    <form method="post" enctype="multipart/form-data" class="container  sgnop shadow p-3 mb-5 bg-white rounded">
+
+      <div>
+        {% csrf_token %} 
+        {{ form|crispy }}
+        <div class="cra">
+            <button type="submit">Submit</button>
+        </div>
+        
+      </div>
+    </form>
+    {% else %}
+      <h1 class="d-flex justify-content-center">Please signin to Book.</h1>
+    {% endif %}
+  
+
+{% endblock %}

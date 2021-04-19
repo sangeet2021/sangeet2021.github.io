@@ -1,0 +1,228 @@
+/* NAVBAR BUTTON */
+.navbar-nav button {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  border: lightgray 1px solid;
+  transition: 0.5s;
+  color: black;
+}
+
+.navbar-nav button:hover {
+  background-color: red;
+  border: red 1px solid;
+  color: white;
+  transition: 0.5s;
+}
+
+.pcards {
+  display: flex;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+}
+
+.pcards img {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 10px 0px 0 10px;
+}
+
+.ptext {
+  background: rgba(0, 0, 0, 0.6);
+  border: rgba(0, 0, 0, 0.6) solid 1px;
+  border-radius: 0 10px 10px 0;
+}
+
+.rm button {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  border: lightgray 1px solid;
+  transition: 0.5s;
+  color: white;
+  margin-left: 80%;
+}
+
+.rm button:hover {
+  background-color: red;
+  border: #d9534f 1px solid;
+  color: white;
+  transition: 0.5s;
+}
+
+/* footer */
+.futar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+
+  background: url(../images/bg8.png) no-repeat center center/cover
+    rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.futar ul li {
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.fut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.lhead {
+  font-weight: bold;
+}
+
+.fb {
+  transition: 0.5s;
+}
+
+.fb:hover {
+  color: #3b5998;
+  transition: 0.5s;
+}
+
+.yt {
+  transition: 0.5s;
+}
+
+.yt:hover {
+  color: #ff0000;
+  transition: 0.5s;
+}
+
+.ig {
+  transition: 0.5s;
+}
+
+.ig:hover {
+  color: #8a3ab9;
+  transition: 0.5s;
+}
+
+.ta {
+  transition: 0.5s;
+}
+
+.ta:hover {
+  color: #00af87;
+  transition: 0.5s;
+}
+
+.ph {
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.ph:hover {
+  color: #3b5998;
+  transition: 0.5s;
+}
+
+.em {
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.em:hover {
+  color: rgb(219, 173, 20);
+  transition: 0.5s;
+}
+.mr {
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.mr:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.inl li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.inl i:hover {
+  cursor: pointer;
+}
+
+.gap i {
+  margin-right: 5px;
+}
+
+.cp i:hover {
+  cursor: pointer;
+}
+
+.inl a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-nav button {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .rm button {
+    height: 30px;
+    width: 120px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .rm button {
+    margin-left: 0%;
+    margin-top: 10%;
+  }
+
+  .places {
+    padding-left: 8px;
+  }
+
+  .pcards img {
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0px 0 10px;
+  }
+
+  .ptext {
+    height: 200px;
+    width: 180px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .ptext p {
+    display: none;
+  }
+
+  .ptext h1 {
+    font-size: 24px;
+  }
+}

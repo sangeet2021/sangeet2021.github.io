@@ -1,0 +1,15 @@
+{% extends 'layout.html' %} {% load crispy_forms_tags %} {% load static %} {% block content%}
+<div class="container">
+    <h1>Update User</h1>
+</div>
+<div class="container">
+  <div class="container">
+    <form method="post" enctype="multipart/form-data" class="container">
+      {% csrf_token %} {{ form|crispy }}
+      <div class="cra">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

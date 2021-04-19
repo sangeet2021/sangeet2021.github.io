@@ -1,0 +1,107 @@
+.futar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-top: 100%;
+  background: url(../images/bg8.png) no-repeat center center/cover;
+
+  color: white;
+}
+
+.futar ul li {
+  padding-bottom: 10px;
+}
+
+.fut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.lhead {
+  font-weight: bold;
+}
+
+.fb {
+  transition: 0.5s;
+}
+
+.fb:hover {
+  color: #3b5998;
+  transition: 0.5s;
+}
+
+.yt {
+  transition: 0.5s;
+}
+
+.yt:hover {
+  color: #ff0000;
+  transition: 0.5s;
+}
+
+.ig {
+  transition: 0.5s;
+}
+
+.ig:hover {
+  color: #8a3ab9;
+  transition: 0.5s;
+}
+
+.ta {
+  transition: 0.5s;
+}
+
+.ta:hover {
+  color: #00af87;
+  transition: 0.5s;
+}
+
+.ph {
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.ph:hover {
+  color: #3b5998;
+  transition: 0.5s;
+}
+
+.em {
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.em:hover {
+  color: rgb(219, 173, 20);
+  transition: 0.5s;
+}
+.mr {
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.mr:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.inl li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.inl i:hover {
+  cursor: pointer;
+}
+
+.gap i {
+  margin-right: 5px;
+}
+
+.cp i:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} {% load crispy_forms_tags %} {% load static %} {% block content%}
+<div class="container">
+  <div class="row">
+
+    <div class="cra mt-5 container">
+      <h2>Upload Data</h2>
+    </div>
+
+    <form method="post" enctype="multipart/form-data" class=" container sgnop mt-5">
+
+      <div>
+        {% csrf_token %} {{ form.media }} {{ form|crispy }}
+        <div class="cra">
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+      
+      
+    </form>
+  </div>
+</div>
+{% endblock %}

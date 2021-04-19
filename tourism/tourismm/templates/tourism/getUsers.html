@@ -1,0 +1,39 @@
+{% extends 'layout.html' %} {% load crispy_forms_tags %}  {% load static %} {% block content%}
+
+<div class="cra mt-5 container pt-5">
+    <h2>Users</h2>
+</div> 
+
+<table class="table-striped container mt-5 ">
+    <tr>
+        <th class="">Name</th>
+        <th>Last Login</th>
+        <th>Admin</th>
+        <th>Active</th>
+        <th>Joined Date</th>
+        <th>Update User</th>
+        <th>Delete User</th>
+        
+        <!-- <th>No of People</th>
+        <th>Booked Date</th>
+        <th>Email</th>
+        <th>Number</th> -->
+    </tr >
+    {% for user in users %}
+    <tr class="">
+        <td> {{ user.username }}</td>
+        <td > {{ user.last_login }}</td>
+        <td> {{ user.is_staff }}</td>
+        <td> {{ user.is_active }}</td>
+        <td> {{ user.date_joined }}</td>
+        <td> <a href="{% url 'user_update' user.pk  %}"><button class="btn btn-success">Update</button></a></td>
+        <td> <a href="{% url 'user_delete' user.pk  %}"><button class="btn btn-success">Delete</button></a></td>
+        
+        
+        
+    </tr>
+    {% endfor %}
+</table>
+  
+
+{% endblock %}

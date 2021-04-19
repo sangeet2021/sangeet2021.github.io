@@ -1,0 +1,43 @@
+{% extends 'layout.html' %} {% load static %} {% block content %}
+<div class="fulin container mt-5">
+  <div class="txt">
+    <h1 >{{ object.name }}</h1>
+    <p >{{ object.content }}</p>
+    <p><span class="act">Activities:</span> {{ object.activities }}</p>
+    <p><span class="act">Travelling Cost:</span> {{ object.cost }}</p>
+  </div>
+  <p><img src="{{ ttd.image_URL }}" alt="" /></p>
+  
+  
+  
+</div>
+
+<div class="desc container mt-5">
+  <h3>{{ object.name }} Gallery</h3>
+</div>
+
+<div class="gallery container-fluid mt-3">
+  <div class="gal ">
+      <a href=""><img src="{{ ttd.first_image_URL }}" alt=""></a>
+  </div>
+
+  <div class="gal">
+      <a href=""><img src="{{ ttd.second_image_URL }}" alt=""></a>
+  </div>
+
+  <div class="gal">
+      <a href=""><img src="{{ ttd.third_image_URL }}" alt=""></a>
+  </div>
+</div>
+
+<div>
+
+<div>
+  {# {% if user.is_staff %}#}
+  <a href="{% url 'updatettd' ttd.pk %}"><button class="btn btn-success">Update</button></a>
+  <a href="{% url 'deletettd' ttd.pk %}"><button class="btn btn-success">Delete</button></a>
+  
+  {# {% endif %}#}
+</div>
+
+{% endblock %}

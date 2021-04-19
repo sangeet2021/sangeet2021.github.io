@@ -1,0 +1,53 @@
+.lgin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sgnp a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.sgnp a:hover {
+  color: red;
+  transition: 0.5;
+}
+
+.lg-frm {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.lg-frm input {
+  width: 200px;
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  outline: none;
+  margin-left: 2px;
+}
+
+.lg-frm label {
+  margin-right: 10px;
+}
+
+.boton {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  border: lightgray 1px solid;
+  transition: 0.5s;
+}
+
+.boton:hover {
+  background-color: #d9534f;
+  border: #d9534f 1px solid;
+  color: white;
+  transition: 0.5s;
+}

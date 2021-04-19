@@ -1,0 +1,114 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent container mt-1  ">
+        <a href="#" class="navbar-brand">LOGO</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        
+    
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link activ">Home</a>
+                <a href="discover.html" class="nav-item nav-link">Discover</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Trip Ideas</a>
+                        <a href="#" class="dropdown-item">Bookings</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <form class="form-inline">
+                <div class="input-group">                    
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-danger"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+            <div class="navbar-nav">
+                <button type="submit" class="">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="as container mt-5">
+        <h1>Adventure Sports</h1>
+    </div>
+
+    <div class="container places mt-5">
+        <div class="pcards mt-5 animate__animated animate__fadeInUp">
+            <div class=""> 
+              <img src="./images/cn.jpg" alt="">
+            </div>
+            <div class="pl-3 pt-5 ptext">
+              <h1>Canyoing</h1>
+              <p class="pt-2 pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dignissimos ipsam doloribus distinctio expedita consequuntur deleniti aperiam in asperiores error magnam laboriosam reprehenderit sequi, sint necessitatibus rerum ad porro, commodi sed animi inventore perspiciatis veritatis doloremque. Animi voluptas, beatae iste pariatur, quod similique nam quia, nihil facere quae eius perferendis!</p>
+              <a href="#" class="rm"><button type="submit">See More</button></a>
+            </div>
+          </div>
+    
+          <div class="pcards mt-5 animate__animated animate__fadeInUp">
+            <div class=""> 
+              <img src="./images/raf.jpg" alt="">
+            </div>
+            <div class="pl-3 pt-5 ptext">
+              <h1>Upper Seti Rafting</h1>
+              <p class="pt-2 pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dignissimos ipsam doloribus distinctio expedita consequuntur deleniti aperiam in asperiores error magnam laboriosam reprehenderit sequi, sint necessitatibus rerum ad porro, commodi sed animi inventore perspiciatis veritatis doloremque. Animi voluptas, beatae iste pariatur, quod similique nam quia, nihil facere quae eius perferendis!</p>
+              <a href="#" class="rm"><button type="submit">See More</button></a>
+            </div>
+          </div>
+    
+          <div class="pcards mt-5 animate__animated animate__fadeInUp">
+            <div class=""> 
+              <img src="./images/bun.jpg" alt="">
+            </div>
+            <div class="pl-3 pt-5 ptext">
+              <h1>Bungee Jumping</h1>
+              <p class="pt-2 pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dignissimos ipsam doloribus distinctio expedita consequuntur deleniti aperiam in asperiores error magnam laboriosam reprehenderit sequi, sint necessitatibus rerum ad porro, commodi sed animi inventore perspiciatis veritatis doloremque. Animi voluptas, beatae iste pariatur, quod similique nam quia, nihil facere quae eius perferendis!</p>
+              <a href="#" class="rm"><button type="submit">See More</button></a>
+            </div>
+          </div>
+    
+          <div class="pcards mt-5 animate__animated animate__fadeInUp">
+            <div class=""> 
+              <img src="./images/zip.jpg" alt="">
+            </div>
+            <div class="pl-3 pt-5 ptext">
+              <h1>Zipline</h1>
+              <p class="pt-2 pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dignissimos ipsam doloribus distinctio expedita consequuntur deleniti aperiam in asperiores error magnam laboriosam reprehenderit sequi, sint necessitatibus rerum ad porro, commodi sed animi inventore perspiciatis veritatis doloremque. Animi voluptas, beatae iste pariatur, quod similique nam quia, nihil facere quae eius perferendis!</p>
+              <a href="#" class="rm"><button type="submit">See More</button></a>
+            </div>
+          </div>
+    
+          <div class="pcards mt-5 animate__animated animate__fadeInUp">
+            <div class=""> 
+              <img src="./images/par.jpg" alt="">
+            </div>
+            <div class="pl-3 pt-5 ptext">
+              <h1>Paragliding</h1>
+              <p class="pt-2 pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dignissimos ipsam doloribus distinctio expedita consequuntur deleniti aperiam in asperiores error magnam laboriosam reprehenderit sequi, sint necessitatibus rerum ad porro, commodi sed animi inventore perspiciatis veritatis doloremque. Animi voluptas, beatae iste pariatur, quod similique nam quia, nihil facere quae eius perferendis!</p>
+              <a href="#" class="rm"><button type="submit">See More</button></a>
+            </div>
+          </div>
+    
+          <div class="pcards mt-5 animate__animated animate__fadeInUp">
+            <div class=""> 
+              <img src="./images/ull.webp" alt="">
+            </div>
+            <div class="pl-3 pt-5 ptext">
+              <h1>Ultra Light Flight</h1>
+              <p class="pt-2 pl-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dignissimos ipsam doloribus distinctio expedita consequuntur deleniti aperiam in asperiores error magnam laboriosam reprehenderit sequi, sint necessitatibus rerum ad porro, commodi sed animi inventore perspiciatis veritatis doloremque. Animi voluptas, beatae iste pariatur, quod similique nam quia, nihil facere quae eius perferendis!</p>
+              <a href="#" class="rm"><button type="submit">See More</button></a>
+            </div>
+          </div>
+    </div>
+
+    {% endblock %}

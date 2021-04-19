@@ -1,0 +1,11 @@
+{% extends 'layout.html' %} {% load static %} {% block content%}
+<div class="container">
+  <div class="row">
+      <h3>Are you sure you want to delete post <b>{{ ttd.name }}?</b></h3>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

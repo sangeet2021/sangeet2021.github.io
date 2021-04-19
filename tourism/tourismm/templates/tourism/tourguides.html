@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    
+{% endblock %}
+{% block content %}
+    <div class="container mt-2">
+        <h1>TRIP IDEAS</h1>
+    </div>
+    <div class="admin-cards container mt-5">
+        
+            <div class="sub-cards">
+                <div class="forbg">
+                    <div class="sub-cards-img">
+                        <img src="{% static 'images/luggage.png' %}" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h3>Solo Trip</h3>
+                </div>
+                <div >
+                    <p><em>"If you're one of those freaky wanderers who love to travel on their own, then you're in for a treat."</em></p>
+                </div>
+            </div>
+        
+       
+
+        
+            <div class="sub-cards">
+                <div class="forbg">
+                    <div class="sub-cards-img">
+                        <img src="{% static 'images/crowd.png' %}" alt="">
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Group Tours</h3>
+                </div>
+                <div>
+                    <p><em>"Travelling with your friends and family is always fun. Pokhara offers many family-friendly destinations."</em></p>
+                </div>
+            </div>
+       
+    
+        
+            <div class="sub-cards">
+                <div class="forbg">
+                    <div class="sub-cards-img">
+                        <img src="{% static 'images/tour-guide.png' %}" alt="">
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Guided Tours</h3>
+                </div>
+                <div>
+                    <p><em>"Travel with our experienced guides for the best experience."</em></p>
+                </div>
+            </div>
+        
+    </div>
+
+   
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'layout.html' %} {% load crispy_forms_tags %} {% block title %}
+<title>Login</title>
+{% endblock %} {% block content %}
+<div class="mainlogin">
+  <div class="container login-box">
+    
+    <div class="lgin mt-5 pt-5">
+      <h2>Please login to continue</h2>
+    </div>
+    
+      
+    <form method="post" class="uniForm container sgnop pt-5 pb-5">
+
+  
+
+      <div>
+        {% csrf_token %} {{ form.media }} {{ form|crispy }}
+        <div class="cra">
+          <button type="submit">Login</button>
+        </div>
+        <div class="ml-3 pl-1 mt-1 d-flex justify-content-center sgnp">
+          <small class="pt-2">Not Registered Yet? <a href="{% url 'signup' %}" >Create an account.</a></small>
+        </div>
+      </div>
+      
+      
+    </form>
+    
+    
+  </div>
+  
+</div>
+{% endblock %}

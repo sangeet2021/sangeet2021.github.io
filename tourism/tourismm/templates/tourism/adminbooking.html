@@ -1,0 +1,68 @@
+{% extends 'layout.html' %} {% load crispy_forms_tags %}  {% load static %} {% block content%}
+
+{% if user.is_authenticated %}
+<div class="cra mt-5  container">
+    <h1>Bookings</h2>
+</div> 
+
+
+<div class="admin-cards container mt-5 pt-2">
+    <a href="{% url 'get_Book' %}">
+        <div class="sub-cards">
+            <div class="forbg">
+                <div class="sub-cards-img">
+                    <img src="{% static 'images/online-booking.png' %}" alt="">
+                </div>
+            </div>
+            <div>
+                <h3>Packages</h3>
+            </div>
+            <div>
+                <small>Book Packages for full experience.</small>
+            </div>
+        </div>
+    </a>
+   
+
+    <a href="{% url 'get_Flight' %}">
+        <div class="sub-cards">
+            <div class="forbg">
+                <div class="sub-cards-img">
+                    <img src="{% static 'images/travel.png' %}" alt="">
+                </div>
+            </div>
+            
+            <div>
+                <h3>Flights</h3>
+            </div>
+            <div>
+                <small>Fly with our partner Buddha Air.</small>
+            </div>
+        </div>
+    </a>
+
+    <a href="{% url 'get_Hotel' %}">
+        <div class="sub-cards">
+            <div class="forbg">
+                <div class="sub-cards-img">
+                    <img src="{% static 'images/hotel.png' %}" alt="">
+                </div>
+            </div>
+            
+            <div>
+                <h3>Hotels</h3>
+            </div>
+            <div>
+                <small>Stay in one of our Partner Hotels.</small>
+            </div>
+        </div>
+    </a>
+</div>
+{% else %}
+<div class="d-flex justify-content-center">
+    <h1>Please <a href="{% url 'login' %}">Login</a> to continue.</h1>
+</div>
+{% endif %}
+
+
+{% endblock %}

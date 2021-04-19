@@ -1,0 +1,37 @@
+.sgnop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cra button {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+  width: 410px;
+  background-color: transparent;
+  outline: none;
+  border: lightgray 1px solid;
+  transition: 0.5s;
+}
+
+.cra button:hover {
+  background-color: #d9534f;
+  border: #d9534f 1px solid;
+  color: white;
+  transition: 0.5s;
+}
+
+@media (max-width: 400px) {
+  .cra button {
+    width: 340px;
+  }
+}

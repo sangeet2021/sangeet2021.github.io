@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    
+{% endblock %}
+{% block content %}
+    <div class="container mt-2">
+        <h1>ADD DESTINATIONS OR ADVENTURES</h1>
+    </div>
+    <div class="admin-card container mt-5">
+        <a href="{% url 'addDiscover' %}">
+            <div class="sub-card ">
+                <div class="forb">
+                    <div class="sub-card-img">
+                        <img src="{% static 'images/map.png' %}" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h3>Add Destinations</h3>
+                </div>
+                <div>
+                    <small>Add new destinations.</small>
+                </div>
+            </div>
+        </a>
+       
+
+        <a href="{% url 'addTtd' %}">
+            <div class="sub-card">
+                <div class="forb">
+                    <div class="sub-card-img">
+                        <img src="{% static 'images/hot-air-balloon.png' %}" alt="">
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Add Adventures</h3>
+                </div>
+                <div>
+                    <small>Add new adventures.</small>
+                </div>
+            </div>
+        </a>
+    
+       
+    </div>
+
+   
+{% endblock %}
